@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Healthy Recipes - GreenBite</title>
+    <meta name="description" content="Discover nutritious and delicious recipes for healthy living">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>🌱 GreenBite</h2>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="recipes.html" class="nav-link active">Recipes</a>
+                </li>
+                <li class="nav-item">
+                    <a href="calculator.html" class="nav-link">Calculator</a>
+                </li>
+                <li class="nav-item">
+                    <a href="workout.html" class="nav-link">Workout</a>
+                </li>
+                <li class="nav-item">
+                    <a href="mindfulness.html" class="nav-link">Mindfulness</a>
+                </li>
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Healthy Recipes</h1>
+            <p>Discover nutritious and delicious recipes for every meal</p>
+        </div>
+    </section>
+
+    <!-- Recipe Filters -->
+    <section class="recipe-filters">
+        <div class="container">
+            <div class="filter-controls">
+                <input type="text" id="recipeSearch" placeholder="Search recipes..." class="search-input">
+                <select id="categoryFilter" class="filter-select">
+                    <option value="all">All Categories</option>
+                    <option value="breakfast">Breakfast</option>
+                    <option value="lunch">Lunch</option>
+                    <option value="dinner">Dinner</option>
+                    <option value="snack">Snack</option>
+                </select>
+            </div>
+        </div>
+    </section>
+
+    <!-- Recipe Grid -->
+    <section class="recipes">
+        <div class="container">
+            <div id="recipeGrid" class="recipe-grid">
+                <!-- Recipes will be populated by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Recipe Modal -->
+    <div id="recipeModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div id="modalContent">
+                <!-- Recipe details will be populated here -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>🌱 GreenBite</h3>
+                    <p>Your partner in healthy living</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="calculator.html">Calculator</a></li>
+                        <li><a href="workout.html">Workout</a></li>
+                        <li><a href="mindfulness.html">Mindfulness</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p>📧 info@greenbite.com</p>
+                    <p>📞 +94 76 433 7327</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; © 2025 GreenBite. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="js/recipes.js"></script>
+</body>
+</html>

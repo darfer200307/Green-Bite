@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact & Feedback - GreenBite</title>
+    <meta name="description" content="Get in touch with GreenBite team and find answers to your questions">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>🌱 GreenBite</h2>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="recipes.html" class="nav-link">Recipes</a>
+                </li>
+                <li class="nav-item">
+                    <a href="calculator.html" class="nav-link">Calculator</a>
+                </li>
+                <li class="nav-item">
+                    <a href="workout.html" class="nav-link">Workout</a>
+                </li>
+                <li class="nav-item">
+                    <a href="mindfulness.html" class="nav-link">Mindfulness</a>
+                </li>
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link active">Contact</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Contact & Feedback</h1>
+            <p>Get in touch with us and find answers to your questions</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact">
+        <div class="container">
+            <div class="contact-grid">
+                
+                <!-- Contact Form -->
+                <div class="contact-form-section">
+                    <h2>Send us a Message</h2>
+                    <form id="contactForm" class="contact-form">
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" required>
+                            <span class="error-message" id="nameError"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" required>
+                            <span class="error-message" id="emailError"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <select id="subject" required>
+                                <option value="">Select a topic</option>
+                                <option value="general">General Inquiry</option>
+                                <option value="recipe">Recipe Suggestion</option>
+                                <option value="bug">Report a Bug</option>
+                                <option value="feedback">Feedback</option>
+                                <option value="partnership">Partnership</option>
+                            </select>
+                            <span class="error-message" id="subjectError"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" rows="5" required placeholder="Tell us how we can help you..."></textarea>
+                            <span class="error-message" id="messageError"></span>
+                        </div>
+
+                        <button type="submit" class="submit-button">Send Message</button>
+                    </form>
+                    <div id="formMessage" class="form-feedback"></div>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="contact-info">
+                    <h2>Get in Touch</h2>
+                    <div class="info-item">
+                        <h3>📧 Email</h3>
+                        <p>info@greenbite.com</p>
+                        <p>support@greenbite.com</p>
+                    </div>
+                    <div class="info-item">
+                        <h3>📞 Phone</h3>
+                        <p>+94 76 433 7327</p>
+                        <p>Mon - Fri: 9AM - 6PM GMT</p>
+                    </div>
+                    <div class="info-item">
+                        <h3>📍 Address</h3>
+                        <p>GreenBite Wellness HQ<br>
+                        20 Dharmarathna avenue<br>
+                        Rawathawatte Moratuwa<br>
+                        Sri Lanka</p>
+                    </div>
+                    <div class="info-item">
+                        <h3>🕒 Business Hours</h3>
+                        <p>Monday - Friday: 9:00 AM - 6:00 PM<br>
+                        Saturday: 10:00 AM - 4:00 PM<br>
+                        Sunday: Closed</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Map Section -->
+            <div class="map-section">
+                <h2>Find Us</h2>
+                <div class="map-container">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3961.8315390620664!2d79.88101127581741!3d6.79034342000323!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae24519b2771e4f%3A0x81b09b7f38813e42!2s20%20Dharmarathna%20Ave%2C%20Moratuwa%2010400!5e0!3m2!1sen!2slk!4v1758492879596!5m2!1sen!2slk" 
+                        width="1200" 
+                        height="450" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq">
+        <div class="container">
+            <h2>Frequently Asked Questions</h2>
+            <div class="faq-container">
+                <div class="faq-item">
+                    <button class="faq-question">
+                        Are the recipes suitable for vegetarians and vegans?
+                        <span class="faq-toggle">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Yes! Our recipe collection includes many vegetarian and vegan options. Each recipe is clearly labeled with dietary information to help you find meals that suit your lifestyle.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        How accurate is the calorie calculator?
+                        <span class="faq-toggle">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Our calculator uses the widely accepted Mifflin-St Jeor equation, which is considered one of the most accurate methods for estimating metabolic rate. However, individual results may vary based on factors like muscle mass and metabolism.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        Can I save my favorite recipes?
+                        <span class="faq-toggle">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Currently, favorite recipes are saved locally in your browser. We're working on a user account system that will allow you to save favorites across devices.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        Is the workout generator suitable for beginners?
+                        <span class="faq-toggle">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Absolutely! Our workout generator creates plans for all fitness levels. Each exercise includes modifications for beginners, and you can adjust the duration to match your current fitness level.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        How often should I use the mindfulness tools?
+                        <span class="faq-toggle">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>For best results, we recommend daily practice. Even 5-10 minutes of breathing exercises or meditation can significantly reduce stress and improve focus. Start small and gradually increase duration as you become more comfortable.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>🌱 GreenBite</h3>
+                    <p>Your partner in healthy living</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="recipes.html">Recipes</a></li>
+                        <li><a href="calculator.html">Calculator</a></li>
+                        <li><a href="workout.html">Workout</a></li>
+                        <li><a href="mindfulness.html">Mindfulness</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p>📧 info@greenbite.com</p>
+                    <p>📞 +94 76 433 7327</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; © 2025 GreenBite. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="js/contact.js"></script>
+</body>
+</html>

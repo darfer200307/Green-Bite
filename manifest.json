@@ -1,0 +1,19 @@
+{
+  "name": "GreenBite Wellness",
+  "short_name": "GreenBite",
+  "description": "Your partner in healthy living through balanced meals, exercise, and mindfulness",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#4CAF50",
+  "theme_color": "#4CAF50",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "favicon.ico",
+      "sizes": "16x16 32x32 48x48",
+      "type": "image/x-icon"
+    }
+  ],
+  "categories": ["health", "fitness", "lifestyle"],
+  "lang": "en"
+}

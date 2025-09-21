@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GreenBite - Healthy Living Wellness</title>
+    <meta name="description" content="GreenBite promotes healthy living through balanced meals, exercise, and mindfulness">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="manifest" href="manifest.json">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>🌱 GreenBite</h2>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link active">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="recipes.html" class="nav-link">Recipes</a>
+                </li>
+                <li class="nav-item">
+                    <a href="calculator.html" class="nav-link">Calculator</a>
+                </li>
+                <li class="nav-item">
+                    <a href="workout.html" class="nav-link">Workout</a>
+                </li>
+                <li class="nav-item">
+                    <a href="mindfulness.html" class="nav-link">Mindfulness</a>
+                </li>
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">Welcome to GreenBite</h1>
+            <p class="hero-quote" id="heroQuote">Your journey to wellness starts here!</p>
+            <button class="cta-button" onclick="scrollToSection('featured')">Get Started</button>
+        </div>
+        <div class="hero-image">
+            <div class="hero-bg"></div>
+        </div>
+    </section>
+
+    <!-- Featured Section -->
+    <section id="featured" class="featured">
+        <div class="container">
+            <h2 class="section-title">Health Tip of the Day</h2>
+            <div class="health-tip" id="healthTip">
+                <h3 id="tipTitle">Loading...</h3>
+                <p id="tipContent">Loading daily health tip...</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Grid -->
+    <section class="features">
+        <div class="container">
+            <h2 class="section-title">Our Features</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">🥗</div>
+                    <h3>Healthy Recipes</h3>
+                    <p>Discover nutritious and delicious recipes for every meal</p>
+                    <a href="recipes.html" class="feature-link">Explore Recipes</a>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📊</div>
+                    <h3>Calorie Calculator</h3>
+                    <p>Calculate your daily calorie needs and macronutrient breakdown</p>
+                    <a href="calculator.html" class="feature-link">Calculate Now</a>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">💪</div>
+                    <h3>Workout Generator</h3>
+                    <p>Get personalized workout plans for any fitness level</p>
+                    <a href="workout.html" class="feature-link">Start Workout</a>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🧘</div>
+                    <h3>Mindfulness</h3>
+                    <p>Practice meditation and breathing exercises for mental wellness</p>
+                    <a href="mindfulness.html" class="feature-link">Find Peace</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter">
+        <div class="container">
+            <h2>Stay Updated</h2>
+            <p>Subscribe to our newsletter for weekly health tips and recipes</p>
+            <form class="newsletter-form" id="newsletterForm">
+                <input type="email" id="newsletterEmail" placeholder="Enter your email" required>
+                <button type="submit">Subscribe</button>
+            </form>
+            <div id="newsletterMessage" class="form-message"></div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>🌱 GreenBite</h3>
+                    <p>Your partner in healthy living</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="recipes.html">Recipes</a></li>
+                        <li><a href="calculator.html">Calculator</a></li>
+                        <li><a href="workout.html">Workout</a></li>
+                        <li><a href="mindfulness.html">Mindfulness</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p>📧 info@greenbite.com</p>
+                    <p>📞 +94 76 433 7327</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; © 2025 GreenBite. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
