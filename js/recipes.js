@@ -7,7 +7,7 @@ const recipeData = [
         name: "Green Smoothie Bowl",
         category: "breakfast",
         description: "A nutritious and delicious smoothie bowl packed with vitamins",
-        image: "green-smoothi.jpg",
+        image: "Images/green-smoothi.jpg",
         ingredients: [
             "1 banana",
             "1 cup spinach",
@@ -37,7 +37,7 @@ const recipeData = [
         name: "Quinoa Salad",
         category: "lunch",
         description: "A protein-rich salad with colorful vegetables",
-        image: "images/recipes/quinoa-salad.jpg",
+        image: "Images/quinao-salad.jpg",
         ingredients: [
             "1 cup cooked quinoa",
             "1 cucumber, diced",
@@ -71,7 +71,7 @@ const recipeData = [
         name: "Grilled Salmon",
         category: "dinner",
         description: "Omega-3 rich salmon with herbs and lemon",
-        image: "images/recipes/grilled-salmon.jpg",
+        image: "Images/grilled-salmon.jpg",
         ingredients: [
             "4 salmon fillets",
             "2 tbsp olive oil",
@@ -102,7 +102,7 @@ const recipeData = [
         name: "Energy Balls",
         category: "snack",
         description: "No-bake energy bites perfect for pre-workout",
-        image: "images/recipes/energy-balls.jpg",
+        image: "Images/energy-balls.jpg",
         ingredients: [
             "1 cup rolled oats",
             "1/2 cup peanut butter",
@@ -132,7 +132,7 @@ const recipeData = [
         name: "Overnight Oats",
         category: "breakfast",
         description: "Prepare the night before for a quick healthy breakfast",
-        image: "images/recipes/overnight-oats.jpg",
+        image: "Images/overnight-oats.jpg",
         ingredients: [
             "1/2 cup rolled oats",
             "1/2 cup almond milk",
@@ -162,7 +162,7 @@ const recipeData = [
         name: "Vegetable Stir Fry",
         category: "dinner",
         description: "Colorful mixed vegetables with brown rice",
-        image: "images/recipes/vegetable-stir-fry.jpg",
+        image: "Images/vegetable-stirfried.png",
         ingredients: [
             "2 cups mixed vegetables",
             "1 cup cooked brown rice",

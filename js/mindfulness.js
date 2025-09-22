@@ -7,6 +7,19 @@ let currentMeditationTime = 0;
 let isBreathing = false;
 let isMeditating = false;
 let soundsEnabled = false;
+// Audio elements for ambient sounds
+const ambientAudios = {
+    rain: new Audio('Audio/Rain.mp3'),
+    ocean: new Audio('Audio/Ocean.mp3'),
+    forest: new Audio('Audio/forest.mp3'),
+    birds: new Audio('Audio/Birds.mp3')
+};
+
+// Loop all ambient sounds
+Object.values(ambientAudios).forEach(audio => {
+    audio.loop = true;
+    audio.volume = 0.5;
+});
 
 document.addEventListener('DOMContentLoaded', function() {
     if (document.querySelector('.mindfulness')) {
@@ -290,28 +303,37 @@ function initializeAmbientSounds() {
     
     soundButtons.forEach(button => {
         button.addEventListener('click', function() {
+            const sound = this.dataset.sound;
             // Toggle active state
             soundButtons.forEach(btn => btn.classList.remove('active'));
-            
+            // Pause all audios
+            Object.values(ambientAudios).forEach(audio => {
+                audio.pause();
+                audio.currentTime = 0;
+            });
             if (!this.classList.contains('active')) {
                 this.classList.add('active');
                 soundsEnabled = true;
+                if (ambientAudios[sound]) {
+                    ambientAudios[sound].play();
+                }
             } else {
                 soundsEnabled = false;
             }
-            
             updateSoundsToggle();
         });
     });
-    
+
     if (toggleSounds) {
         toggleSounds.addEventListener('click', function() {
             soundsEnabled = !soundsEnabled;
-            
             if (!soundsEnabled) {
                 soundButtons.forEach(btn => btn.classList.remove('active'));
+                Object.values(ambientAudios).forEach(audio => {
+                    audio.pause();
+                    audio.currentTime = 0;
+                });
             }
-            
             updateSoundsToggle();
         });
     }
