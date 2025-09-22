@@ -223,7 +223,7 @@ function createRecipeCard(recipe) {
     
     card.innerHTML = `
         <div class="recipe-image">
-            <img src="${recipe.image}" alt="${recipe.name}" style="width: 100%; max-width: 120px; border-radius: 12px; object-fit: cover;" onerror="this.onerror=null;this.src='images/recipes/placeholder.jpg';">
+            <img src="${recipe.image}" alt="${recipe.name}" onerror="this.onerror=null;this.src='images/recipes/placeholder.jpg';">
         </div>
         <div class="recipe-info">
             <h3>${recipe.name}</h3>
