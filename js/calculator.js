@@ -1,3 +1,48 @@
+
+// Minimal GreenBiteUtils for calculator functionality
+const GreenBiteUtils = {
+    clearFormErrors: function() {
+        // Remove error messages
+        const errorElements = document.querySelectorAll('.form-error');
+        errorElements.forEach(el => el.remove());
+    },
+    validateForm: function(formData, validationRules) {
+        const errors = {};
+        for (const field in validationRules) {
+            if (validationRules[field].required && !formData[field]) {
+                errors[field] = 'This field is required.';
+            }
+        }
+        return errors;
+    },
+    displayFormErrors: function(errors) {
+        for (const field in errors) {
+            const input = document.getElementById(field);
+            if (input) {
+                const error = document.createElement('div');
+                error.className = 'form-error';
+                error.style.color = 'red';
+                error.style.fontSize = '0.9em';
+                error.textContent = errors[field];
+                input.parentNode.appendChild(error);
+            }
+        }
+    },
+    getFromLocalStorage: function(key, defaultValue) {
+        try {
+            const value = localStorage.getItem(key);
+            return value ? JSON.parse(value) : defaultValue;
+        } catch {
+            return defaultValue;
+        }
+    },
+    saveToLocalStorage: function(key, value) {
+        try {
+            localStorage.setItem(key, JSON.stringify(value));
+        } catch {}
+    }
+};
+
 // Calculator Page JavaScript
 
 document.addEventListener('DOMContentLoaded', function() {
