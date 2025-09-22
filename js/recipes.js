@@ -7,7 +7,7 @@ const recipeData = [
         name: "Green Smoothie Bowl",
         category: "breakfast",
         description: "A nutritious and delicious smoothie bowl packed with vitamins",
-        image: "images/recipes/Green Smoothie Bowl.jpg",
+        image: "green-smoothi.jpg",
         ingredients: [
             "1 banana",
             "1 cup spinach",
